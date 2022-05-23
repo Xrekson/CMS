@@ -1,0 +1,47 @@
+<!DOCTYPE: html>
+<html lang="en-US">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stl.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/91c705c622.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <h1>Contact Management System</h1>
+        <div class="cms-table-container" id="cmsTableContainer">
+            <div class="cms-table-row">
+                <div class="cms-table-column cms-name cms-header">Name</div>
+                <div class="cms-table-column cms-phone cms-header">Phone</div>
+                <div class="cms-table-column cms-address cms-header">Addresss</div>
+                <div class="cms-table-column cms-header cms-add-entry-column" id="cmsAddNewEntry">+</div>
+            </div>
+            <span id="tableBody"></span>
+        </div>
+
+        <div class="disable-modal" id="backdrop"></div>
+        <div class="disable-modal" id="newPersonModal">
+
+            <h1>Add New Person</h1>
+
+            <label for="NewPersonName">Name</label>
+            <input type="text" id="newPersonName">
+
+            <label for="NewPersonPhone">Phone</label>
+            <input type="text" id="newPersonPhone">
+
+            <label for="NewPersonAddress">Address</label>
+            <input type="text" id="newPersonAddress">
+
+            <button id="newPersonCancelBtn">Cancel</button>
+            <button id="newPersonSubmitBtn">Submit</button>
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
